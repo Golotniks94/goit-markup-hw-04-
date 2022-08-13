@@ -311,10 +311,21 @@ body {
   width: 44px;
   height: 44px;
 }
-.team-social__link {
+
+.social-link__items:hover,
+.social-link__items:focus {
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.team-social__link:hover,
+.team-social__link:focus {
+  fill: var(--white-color);
+  color: #ffffff;
 }
 .team-social__list {
   margin: 12px 0px 0px 12px;
+  fill: currentColor;
 }
 
 /* Section Client  */
@@ -339,6 +350,12 @@ body {
   display: flex;
   border: 1px solid #afb1b8;
   padding: 16px 31px;
+}
+
+.customers-link:focus,
+.customers-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .customer-icons {
   fill: currentColor;
@@ -431,6 +448,13 @@ body {
   color: #ffffff;
   background-color: #ffffff10;
 }
+
+.footer-list__link:hover,
+.footer-list__link:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
 .footer-list__icons {
 }
 /*  END Social block  */
