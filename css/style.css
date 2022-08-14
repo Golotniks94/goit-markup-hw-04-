@@ -133,13 +133,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.mail {
-  color: var(--accent-color);
-}
-
-.tel {
-}
-
 .info:hover,
 .info:focus {
   color: var(--accent-color);
@@ -219,20 +212,25 @@ body {
   margin-right: 30px;
 }
 
+.features-icon__block {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--team-background-color);
+}
+.features-icon__svg {
+}
+
 .title {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.text-link {
+.feature-text {
   line-height: 24px;
   color: var(--secondary-text-color);
-  text-decoration: none;
-}
-
-.text-link:hover,
-.text-link:focus {
-  color: var(--accent-color);
 }
 
 /* IMAGE block  */
@@ -344,7 +342,6 @@ body {
 }
 
 .customer-items {
-  height: 90px;
 }
 
 .customer-items:hover,
@@ -355,9 +352,12 @@ body {
 
 .customers-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 31px;
   color: #afb1b8;
 }
 
@@ -404,8 +404,6 @@ body {
   line-height: 1.62;
   text-align: center;
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background: var(--team-background-color);
   border: none;
@@ -417,6 +415,8 @@ body {
 .button:focus {
   background: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Page block  */
@@ -498,6 +498,12 @@ body {
 .page-block {
   background: var(--white-color);
   text-decoration: none;
+}
+
+.page-block:hover,
+.page-block:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-border {
