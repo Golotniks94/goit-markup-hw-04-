@@ -488,7 +488,7 @@ body {
 .address {
   font-style: normal;
 }
-/* Client Block */
+/*  Client Block  */
 .client-list {
   display: flex;
   flex-wrap: wrap;
